@@ -53,7 +53,7 @@ test('task4', () => {
   });
 
   assert.equal(schema.isValid({ num: 54, array: [1, 2, 3, 5, 65, 2] }), true);
- // assert.equal(schema.isValid({ num: 2, array: [1, 2, '4'] }), false);
+  assert.equal(schema.isValid({ num: 2, array: [1, 2, '4'] }), false);
 });
 
 test('task5', () => {
